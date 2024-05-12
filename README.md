@@ -1,37 +1,49 @@
-# gif_maker3.0
+# gif_maker1.0
 
-used moviepy and PIL(pillow) for image process.
+used imageio, moviepy, PIL, skimage for image process.
 
-used tkinter for GUI.
+used tkinger for GUI.
 
-(practiced in base1.py and base2.py)
+**this will not work, so visit [here](https://github.com/MrGreenSmile/gif_maker2.0)**
 
-*to use this, download the exe and icon file*
+-------------------------
+prepare for pyinstaller,
+```python
+from moviepy.audio.fx.audio_fadein import audio_fadein
+from moviepy.audio.fx.audio_fadeout import audio_fadeout
+from moviepy.audio.fx.audio_left_right import audio_left_right
+from moviepy.audio.fx.audio_loop import audio_loop
+from moviepy.audio.fx.audio_normalize import audio_normalize
+from moviepy.audio.fx.volumex import volumex
 
-## how-to-use
-![gif maker](/tutorial.png)
-
-> output : output name.
-> 
-> fps : frame per second. set how fast gif is.
->
-> scale : unifying scale of images.
-> 
-> section : extracting section of videos. (unit : second)
-
-### Images
-![gif maker](/tutorial01.png)
-
-0. Prepare images.
-1. Set attributes.
-2. Press 'Open Images' to choose file. List will appear below blank area.
-3. Reorder images list.
-4. Press '여!' to finish process.
-
-### Video
-![gif maker](/tutorial02.png)
-
-0. Prepare video.
-1. Set attributes.
-2. Press 'Open Videos' to choose file. File name will appear below blank area but can't be modified.
-3. Press '여!' to finish process.
+from moviepy.video.fx.accel_decel import accel_decel
+from moviepy.video.fx.blackwhite import blackwhite
+from moviepy.video.fx.blink import blink
+from moviepy.video.fx.colorx import colorx
+from moviepy.video.fx.crop import crop
+from moviepy.video.fx.even_size import even_size
+from moviepy.video.fx.fadein import fadein
+from moviepy.video.fx.fadeout import fadeout
+from moviepy.video.fx.freeze import freeze
+from moviepy.video.fx.freeze_region import freeze_region
+from moviepy.video.fx.gamma_corr import gamma_corr
+from moviepy.video.fx.headblur import headblur
+from moviepy.video.fx.invert_colors import invert_colors
+from moviepy.video.fx.loop import loop
+from moviepy.video.fx.lum_contrast import lum_contrast
+from moviepy.video.fx.make_loopable import make_loopable
+from moviepy.video.fx.margin import margin
+from moviepy.video.fx.mask_and import mask_and
+from moviepy.video.fx.mask_color import mask_color
+from moviepy.video.fx.mask_or import mask_or
+from moviepy.video.fx.mirror_x import mirror_x
+from moviepy.video.fx.mirror_y import mirror_y
+from moviepy.video.fx.painting import painting
+from moviepy.video.fx.resize import resize
+from moviepy.video.fx.rotate import rotate
+from moviepy.video.fx.scroll import scroll
+from moviepy.video.fx.speedx import speedx
+from moviepy.video.fx.supersample import supersample
+from moviepy.video.fx.time_mirror import time_mirror
+from moviepy.video.fx.time_symmetrize import time_symmetrize
+```
